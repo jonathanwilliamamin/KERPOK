@@ -13,7 +13,7 @@ $i = 1;
 <body>
 <div class="container">
     <h1>Daftar Tabel Dokter</h1>
-    <a href="tambah.php">Tambah data</a>
+    <a href="tambah_tb_dokter.php">Tambah data</a>
     <br></br>
 
     
