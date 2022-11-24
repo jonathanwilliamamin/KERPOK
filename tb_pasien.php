@@ -31,7 +31,7 @@ $i = 1;
         <tr>
             <?php foreach ($pasien as $p) { ?>
                 <td> <?php echo $i; ?> </td>
-                <td> <a href="ubah.php?id_pasien=<?= $p["id_pasien"] ?>"> ubah </a> | <a href="hapus.php?id_pasien=<?= $p["id_pasien"] ?>"> hapus </a> </td>
+                <td> <a href="ubah_tb_pasien.php?id_pasien=<?= $p["id_pasien"] ?>"> ubah </a> | <a href="hapus.php?id_pasien=<?= $p["id_pasien"] ?>"> hapus </a> </td>
                 <td> <?php echo $p["nomor_identitas"]; ?> </td>
                 <td> <?php echo $p["nama_pasien"]; ?> </td>
                 <td> <?php echo $p["jenis_kelamin"]; ?> </td>

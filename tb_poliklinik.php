@@ -28,7 +28,7 @@ $i = 1;
         <tr>
             <?php foreach ($poliklinik as $p) { ?>
                 <td> <?php echo $i; ?> </td>
-                <td> <a href="ubah.php?id_poli=<?= $p["id_poli"] ?>"> ubah </a> | <a href="hapus.php?id_poli=<?= $p["id_poli"] ?>"> hapus </a> </td>
+                <td> <a href="ubah_tb_poliklinik.php?id_poli=<?= $p["id_poli"] ?>"> ubah </a> | <a href="hapus.php?id_poli=<?= $p["id_poli"] ?>"> hapus </a> </td>
                 <td> <?php echo $p["nama_poli"]; ?> </td>
                 <td> <?php echo $p["gedung"]; ?> </td>
                 <?php $i++; ?>  

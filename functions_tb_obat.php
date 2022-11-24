@@ -24,4 +24,23 @@ function tambah($data) {
     mysqli_query($conn, $query);
     return mysqli_affected_rows($conn);
 }
+
+function ubah($data) {
+    global $conn;
+
+    $id_obat = $data["id_obat"];
+    $nama_obat = $data["nama_obat"];
+    $ket_obat = $data["ket_obat"];
+
+    $query = "UPDATE tb_obat SET
+    id_obat = '$id_obat',
+    nama_obat = '$nama_obat',
+    ket_obat = '$ket_obat'
+    WHERE id_obat = $id_obat";
+
+    mysqli_query($conn, $query);
+
+    return mysqli_affected_rows($conn);
+
+}
 ?>
