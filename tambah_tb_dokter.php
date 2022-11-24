@@ -28,6 +28,10 @@ if (isset($_POST["submit"])) {
     <form action="" method="post"> 
     <ul>
         <li>
+            <label for="id_dokter">ID dokter: </label>
+            <input type="id_dokter" name="id_dokter" id="id_dokter">
+        </li>
+        <li>
             <label for="nama_dokter">Nama dokter: </label>
             <input type="nama_dokter" name="nama_dokter" id="nama_dokter">
         </li>

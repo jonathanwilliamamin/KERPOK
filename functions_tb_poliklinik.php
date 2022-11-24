@@ -4,11 +4,12 @@ $conn = mysqli_connect("localhost", "root", "", "relasitabeltest");
 function tambah($data) {
     global $conn;
 
-    $id_obat = $data["id_obat"];
-    $nama_obat = $data["nama_obat"];
-    $ket_obat = $data["ket_obat"];
+    $id_poli = $data["id_poli"];
+    $nama_poli = $data["nama_poli"];
+    $gedung = $data["gedung"];
 
-    $query = "INSERT INTO tb_obat VALUES ('$id_obat', '$nama_obat', '$ket_obat');";
+
+    $query = "INSERT INTO tb_poliklinik VALUES ('', '$nama_poli', '$gedung');";
 
     mysqli_query($conn, $query);
     return mysqli_affected_rows($conn);

@@ -4,6 +4,7 @@ $conn = mysqli_connect("localhost", "root", "", "relasitabeltest");
 function tambah($data) {
     global $conn;
 
+    $id_pasien = $data["id_pasien"];
     $nomor_identitas = $data["nomor_identitas"];
     $nama_pasien = $data["nama_pasien"];
     $jenis_kelamin = $data["jenis_kelamin"];

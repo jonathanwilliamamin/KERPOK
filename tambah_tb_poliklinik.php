@@ -1,16 +1,16 @@
 <?php
-require 'functions_tb_obat.php';
+require 'functions_tb_poliklinik.php';
 
 if (isset($_POST["submit"])) {
     if ( tambah($_POST) > 0 ) {
         echo "<script>
         alert('data berhasil ditambahkan!');
-        document.location.href = 'tb_obat.php';
+        document.location.href = 'tb_poliklinik.php';
         </script>";
     } else {
         echo "<script>
         alert('data gagal ditambahkan!');
-        document.location.href = 'tb_obat.php';
+        document.location.href = 'tb_poliklinik.php';
         </script>";
     }
 }
@@ -28,16 +28,16 @@ if (isset($_POST["submit"])) {
     <form action="" method="post"> 
     <ul>
         <li>
-            <label for="id_obat">ID obat: </label>
-            <input type="id_obat" name="id_obat" id="id_obat">
+            <label for="id_poli">ID poli: </label>
+            <input type="id_poli" name="id_poli" id="id_poli">
         </li>
         <li>
-            <label for="nama_obat">Nama obat: </label>
-            <input type="nama_obat" name="nama_obat" id="nama_obat">
+            <label for="nama_poli">Nama poli: </label>
+            <input type="nama_poli" name="nama_poli" id="nama_poli">
         </li>
         <li>
-            <label for="ket_obat">Keterangan obat: </label>
-            <input type="ket_obat" name="ket_obat" id="ket_obat">
+            <label for="gedung">Gedung: </label>
+            <input type="gedung" name="gedung" id="gedung">
         </li>
         <button type="submit" name="submit">Submit</button>
 </body>
