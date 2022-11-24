@@ -43,4 +43,10 @@ function ubah($data) {
     return mysqli_affected_rows($conn);
 
 }
+
+function hapus($id) {
+    global $conn;
+    mysqli_query($conn, "DELETE FROM tb_obat WHERE id_obat = $id");
+    return mysqli_affected_rows($conn);
+}
 ?>

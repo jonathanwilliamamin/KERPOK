@@ -44,4 +44,10 @@ function ubah($data) {
     return mysqli_affected_rows($conn);
 
 }
+
+function hapus($id) {
+    global $conn;
+    mysqli_query($conn, "DELETE FROM tb_poliklinik WHERE id_poli = $id");
+    return mysqli_affected_rows($conn);
+}
 ?>
