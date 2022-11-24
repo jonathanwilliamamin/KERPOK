@@ -30,7 +30,7 @@ $i = 1;
         <tr>
             <?php foreach ($dokter as $d) { ?>
                 <td> <?php echo $i; ?> </td>
-                <td> <a href="ubah.php?id_dokter=<?= $d["id_dokter"] ?>"> ubah </a> | <a href="hapus.php?id=<?= $d["id_dokter"] ?>"> hapus </a> </td>
+                <td> <a href="ubah_tb_dokter.php?id_dokter=<?= $d["id_dokter"] ?>"> ubah </a> | <a href="hapus.php?id=<?= $d["id_dokter"] ?>"> hapus </a> </td>
                 <td> <?php echo $d["nama_dokter"]; ?> </td>
                 <td> <?php echo $d["spesialis"]; ?> </td>
                 <td> <?php echo $d["alamat"]; ?> </td>
